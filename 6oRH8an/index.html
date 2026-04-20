@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patwin Plumbing Solutions | Reliable 24/7 Expert Plumbers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <div class="bg-navy-900 p-2 rounded-lg">
+                        <i data-lucide="droplet" class="text-white w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-navy-900">PATWIN<span class="text-blue-600">.</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm uppercase tracking-wider text-slate-600">
+                    <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                    <a href="#why-us" class="hover:text-blue-600 transition-colors">Why Us</a>
+                    <a href="#contact" class="bg-navy-900 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all shadow-lg">Get Estimate</a>
+                </div>
+                <button class="md:hidden text-navy-900" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000" alt="Professional Plumbing" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-20">
+            <div class="max-w-2xl" id="hero-content">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    24/7 Emergency Service Available
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-navy-900 leading-tight mb-6">
+                    Reliability You Can Trust, <span class="text-blue-600">Solutions</span> That Last.
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                    From emergency repairs to precision installations, <strong>Patwin Plumbing Solutions</strong> provides 24/7 expert service to keep your home’s water flowing and your mind at ease.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center">Get a Free Estimate</a>
+                    <a href="tel:5550123456" class="px-8 py-4 border-2 border-navy-900 text-navy-900 rounded-xl font-bold text-lg hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="phone-call" class="w-5 h-5"></i>
+                        (555) 012-3456
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Services Overview -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">What We Do</h2>
+                <h3 class="text-4xl font-bold text-navy-900">Our Expert Services</h3>
+                <p class="mt-4 text-slate-600">Comprehensive plumbing solutions tailored to your home and commercial needs.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="services-grid">
+                <!-- Services are dynamically injected or static -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 group">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="alert-circle" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Emergency Repairs</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">24/7 rapid response for burst pipes, major leaks, and overflowing fixtures.</p>
+                    <p class="text-xs font-semibold text-slate-400 uppercase italic">Minimizes water damage immediately.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 group">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="filter" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Drain Cleaning</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Comprehensive clearing of stubborn clogs using advanced hydro-jetting technology.</p>
+                    <p class="text-xs font-semibold text-slate-400 uppercase italic">Prevents recurring backups.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 group">
+                    <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="thermometer" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Water Heater Service</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Expert repair, maintenance, and installation of traditional and tankless systems.</p>
+                    <p class="text-xs font-semibold text-slate-400 uppercase italic">Consistent hot water access.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-100 group">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="wrench" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Pipe Installation</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Precision repiping and new construction using high-grade, durable materials.</p>
+                    <p class="text-xs font-semibold text-slate-400 uppercase italic">Increases property value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Us -->
+    <section id="about" class="py-24 bg-navy-900 text-white overflow-hidden relative">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl"></div>
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1200" alt="Master Plumber" class="rounded-3xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="absolute -bottom-6 -right-6 bg-blue-600 p-8 rounded-2xl z-20 shadow-xl">
+                    <p class="text-4xl font-bold">15+</p>
+                    <p class="text-blue-100 text-sm uppercase tracking-wider">Years Experience</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Our Heritage</h2>
+                <h3 class="text-4xl font-bold mb-8">Committed to Quality Since Day One</h3>
+                <blockquote class="text-xl text-blue-100 italic leading-relaxed mb-8 border-l-4 border-blue-600 pl-6">
+                    "At Patwin Plumbing Solutions, we believe that quality plumbing is the backbone of a comfortable home. Founded on the principles of integrity and technical excellence, we have served our community for years with a simple promise: to treat every home as if it were our own."
+                </blockquote>
+                <p class="text-slate-300 leading-relaxed">
+                    Our team of master plumbers isn't just trained in the latest tools—they are committed to the old-fashioned values of punctuality, honesty, and a job well done.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us -->
+    <section id="why-us" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">The Patwin Difference</h2>
+                <h3 class="text-4xl font-bold text-navy-900">Why homeowners trust us</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-2">24/7 Emergency Availability</h4>
+                        <p class="text-slate-600">Plumbing disasters don't follow a 9-to-5 schedule. We are ready to respond whenever you need us.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-2">Fully Licensed & Insured</h4>
+                        <p class="text-slate-600">Your property is protected. Our technicians are highly trained professionals who adhere to strict safety standards.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="tag" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-2">Transparent, Upfront Pricing</h4>
+                        <p class="text-slate-600">No hidden fees or "surprise" surcharges. You’ll receive a detailed quote before we even pick up a wrench.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-2">Cleanliness Guaranteed</h4>
+                        <p class="text-slate-600">We respect your space. Our team uses floor protectors and performs a thorough cleanup after every project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Testimonials -->
+    <section class="py-24 bg-slate-50 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-navy-900 text-center mb-16">What Our Clients Say</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex text-orange-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <h5 class="font-bold text-lg mb-3">"A Life-Saver in the Middle of the Night!"</h5>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"Our main line backed up at 11:00 PM on a Saturday. Patwin Plumbing had a technician at our door within 45 minutes."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                        <div>
+                            <p class="text-sm font-bold">Sarah M.</p>
+                            <p class="text-xs text-slate-400 uppercase">Residential Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 scale-105 border-blue-100 ring-2 ring-blue-50">
+                    <div class="flex text-orange-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <h5 class="font-bold text-lg mb-3">"Professionalism at its Finest"</h5>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"We used Patwin for a full bathroom remodel and repiping. Their attention to detail was incredible. They finished on schedule."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                        <div>
+                            <p class="text-sm font-bold">James R.</p>
+                            <p class="text-xs text-slate-400 uppercase">Property Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex text-orange-400 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <h5 class="font-bold text-lg mb-3">"Honest and Reliable"</h5>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">"It’s hard to find a plumber who doesn't try to upsell you. Patwin fixed our water heater rather than forcing a replacement."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-slate-200 rounded-full"></div>
+                        <div>
+                            <p class="text-sm font-bold">Linda T.</p>
+                            <p class="text-xs text-slate-400 uppercase">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact & Footer -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-navy-900 rounded-[3rem] p-8 lg:p-16 text-white grid lg:grid-cols-2 gap-16 overflow-hidden relative">
+                <div class="relative z-10">
+                    <h3 class="text-4xl font-bold mb-6">Ready to solve your plumbing problems?</h3>
+                    <p class="text-blue-200 text-lg mb-10">Contact us today for a free quote or immediate emergency assistance.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm uppercase font-bold tracking-tighter">Standard Service</p>
+                                <a href="tel:5550123456" class="text-xl font-bold hover:text-blue-400">(555) 012-3456</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-red-600 flex items-center justify-center">
+                                <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm uppercase font-bold tracking-tighter">Emergency Dispatch</p>
+                                <a href="tel:5550129999" class="text-xl font-bold hover:text-red-400">(555) 012-9999</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-sm uppercase font-bold tracking-tighter">Office</p>
+                                <p class="text-lg">123 Pipeline Way, Suite 400, City, ST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="bg-white p-8 lg:p-12 rounded-3xl text-slate-900 relative z-10 shadow-2xl">
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-1">Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-1">Phone</label>
+                                <input type="tel" placeholder="(555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-1">Service Needed</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50">
+                                <option>Emergency Repair</option>
+                                <option>Drain Cleaning</option>
+                                <option>Water Heater</option>
+                                <option>Installation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-1">Message</label>
+                            <textarea rows="4" placeholder="How can we help?" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-100">
+                            Send Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <div class="bg-blue-600 p-2 rounded-lg">
+                        <i data-lucide="droplet" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">PATWIN PLUMBING</span>
+                </div>
+                <div class="flex gap-8 text-slate-400 text-sm">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Careers</a>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-slate-500 text-xs">
+                &copy; 2026 Patwin Plumbing Solutions. All rights reserved. Master License #123456789.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur border-t border-slate-200 z-[60] flex gap-3">
+        <a href="tel:5550123456" class="flex-1 bg-navy-900 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+        </a>
+        <a href="#contact" class="flex-1 bg-blue-600 text-white py-3 rounded-xl font-bold text-center">Estimate</a>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
